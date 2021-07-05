@@ -12,8 +12,8 @@ const countdown = () => {
     const textDay = Math.floor(gap / day);
     // we use modulus to see what is left over per day
     const textHour = Math.floor((gap % day) / hour);
-    const textMinute = Math.floor((gap % day) / minute);
-    const textSecond = Math.floor((gap % day) / second);
+    const textMinute = Math.floor((gap % hour) / minute);
+    const textSecond = Math.floor((gap % minute) / second);
     console.log(textDay);
     console.log(textHour);
     console.log(textMinute);
